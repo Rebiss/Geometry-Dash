@@ -1,14 +1,14 @@
 import React from 'react'
 import { View } from 'react-native'
 
-export const Dash = ({dashLeft, dashWidth, dashHeight, space, bgColor}) => {
+export const Dash = ({dashLeft, dashWidth, dashHeight, space, bgColor, random}) => {
     const style = {
             position: 'absolute',
             backgroundColor: bgColor,
             width: dashWidth,
             height: dashHeight,
             left: dashLeft,
-            bottom: 0 + dashHeight + space,
+            bottom: random + dashHeight + space,
             borderRadius: '15px'
         },
         styleOne = {
@@ -17,7 +17,7 @@ export const Dash = ({dashLeft, dashWidth, dashHeight, space, bgColor}) => {
             width: dashWidth,
             height: dashHeight,
             left: dashLeft,
-            bottom: 0,
+            bottom: random,
             borderRadius: '15px'
         };
 

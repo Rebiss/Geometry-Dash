@@ -7,4 +7,5 @@ export const gravityB = 3,
             dashWidthT = 50,
             dashHeightT = 300,
             spaceT = 100,
-            bgColor ='#FD02FF';
+            bgColor ='#FD02FF',
+            random = -Math.random() * 100;
