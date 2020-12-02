@@ -1,0 +1,11 @@
+export const gravityB = 3,
+            gravityR = 5,
+            dashWidth = 30,
+            dashHeight = 300,
+            space = 180,
+            gravityRT = 5,
+            dashWidthT = 50,
+            dashHeightT = 300,
+            spaceT = 100,
+            bgColor ='#FD02FF',
+            random = -Math.random() * 100;
