@@ -1,18 +1,19 @@
 import React from 'react'
 import { View } from 'react-native'
+import rocket from './img/2130.png'
 
 export const Geometry = ({geoBottom, geoLeft}) => {
-    const geoWidth = 50,
-        geoHeight = 50;
-
     const style = {
         position: 'absolute',
         borderRadius: '50%',
-        backgroundColor: '#78FD02',
-        width: '50px',
-        height: '50px',
-        left: geoLeft - (geoWidth/2),
-        bottom: geoBottom - (geoHeight/2)
+        backgroundImage: `url(${rocket})`,
+        // backgroundRepeat: `no-repeat`,
+        // backgroundAttachment: `fixed`,
+        // backgroundPosition: `center`,
+        width: '64px',
+        height: '64px',
+        left: geoLeft - 25,
+        bottom: geoBottom - 25
     }
     return (
         <View style={style} />

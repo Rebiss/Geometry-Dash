@@ -21,7 +21,7 @@ export default function App() {
   
 
   useEffect(() => {
-    if(geoBottom > 0) { timerIdBotton = setInterval(() => { setGeoBottom(geoBottom => geoBottom - gravityB )}, 31)}
+    if(geoBottom > 0) { timerIdBotton = setInterval(() => { setGeoBottom(geoBottom => geoBottom - gravityB )}, 30)}
 
     return () => clearInterval(timerIdBotton) 
   }, [geoBottom])
@@ -48,10 +48,11 @@ export default function App() {
 
   useEffect(() => {    
     if (
-      ((geoBottom < (dashH + dashHeight + 30) || geoBottom > (dashH + dashHeight + space -30)) && (dashRight > screenW/2 -30 && dashRight < screenW/2 + 30 ))
+      ((geoBottom < (dashH + dashHeight + 30) || geoBottom > (dashH + dashHeight + space - 30)) && (dashRight > screenW/2 - 30 && dashRight < screenW/2 + 30 ))
       || 
-      ((geoBottom < (dashHT + dashHeight + 30) || geoBottom > (dashHT + dashHeight + space -30)) && (dashRight > screenW/2 -30 && dashRightT < screenW/2 + 30 ))) 
+      ((geoBottom < (dashHT + dashHeight + 30) || geoBottom > (dashHT + dashHeight + space - 30)) && (dashRight > screenW/2 - 30 && dashRightT < screenW/2 + 30 ))) 
       {
+        console.log('game over')
       gameOver()
     }
   },[])
@@ -61,9 +62,8 @@ export default function App() {
     clearInterval(timerIdRight)
     clearInterval(timerIdRightT)
     setIsGameOver(true)
-  }
-
-  const jumping = () => {
+  },
+  jumping = () => {
     if(!isGameOver && (geoBottom < screenW)) {
       setGeoBottom(geoBottom => geoBottom + 50)
     }
@@ -73,8 +73,8 @@ export default function App() {
     <TouchableWithoutFeedback onPress={jumping}>
       <View style={AppStyle}>
         <Geometry geoBottom={geoBottom} geoLeft={geometryL}/>
-        <Dash dashLeft={dashRight} dashWidth={dashWidth} dashHeight={dashHeight} space={space} bgColor={bgColor} random={dashH}/>
-        <Dash dashLeft={dashRightT} dashWidth={dashWidthT} dashHeight={dashHeightT} space={spaceT} bgColor={bgColor}  random={dashHT}/>
+        <Dash dashLeft={dashRight} dashWidth={dashWidth} dashHeight={dashHeight} space={space} bgColor={bgColor} random={random}/>
+        <Dash dashLeft={dashRightT} dashWidth={dashWidthT} dashHeight={dashHeightT} space={spaceT} bgColor={bgColor}  random={random}/>
       </View>
     </TouchableWithoutFeedback>
   );
