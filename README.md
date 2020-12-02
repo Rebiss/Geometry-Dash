@@ -1,4 +1,5 @@
 # Geometry Dash.
+![version](https://img.shields.io/badge/version-0.0.2-blue.svg)
 
 <a href="https://expo.io/">
 <img border="0" alt="Geometry Dash" src="https://www.hrkgame.com/media/screens/322170/.thumbnails/ss_89fd9afb5dea806cb0c696bbb2b4e602cc21a713.600x338.jpg/ss_89fd9afb5dea806cb0c696bbb2b4e602cc21a713.600x338-800x500.jpg" >
@@ -22,11 +23,9 @@ Upon its release, Geometry Dash had just seven levels, which are now currently f
   - [Browser Support](#browser-support)
   - [Resources](#resources)
   - [Licensing](#licensing)
-    - [Social Media](#social-media)
 
 
 ## Versions
-![version](https://img.shields.io/badge/version-0.0.2-blue.svg)
 
 | React Native | Expo | 
 | ---  | --- |
@@ -36,12 +35,11 @@ Upon its release, Geometry Dash had just seven levels, which are now currently f
 Use the package manager npm or yarn.
 
 ```sh
-> npm install --global expo-cli || yarn global add  expo-cli
-> npm run start || yarn run start
-> npm run android || yarn run android
-> npm run ios || yarn run ios
-> npm run web || yarn run web
-> npm run eject || yarn run eject
+> yarn run start
+> yarn run android
+> yarn run ios
+> yarn run web
+> yarn run eject
 ```
 
 ## Documentation
@@ -112,8 +110,3 @@ At present, we officially aim to support the last two versions of the following 
 - Copyright 2020 (https://github.com/Rebiss)
 
 - Licensed under MIT (https://github.com/expo/expo-cli/blob/master/packages/expo-cli/LICENSE)
-
-
-### Social Media
-
-Github: <https://github.com/Rebiss>
