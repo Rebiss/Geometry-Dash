@@ -1,10 +1,10 @@
 # Geometry Dash.
 
 <a href="https://expo.io/">
-<img border="0" alt="Geometry Dash" src="https://i20.kanobu.ru/c/e1f46bb9c5636659baa1a169de426980/200x284/u.kanobu.ru/games/7b62f269-c816-4dae-8803-2ec59aa561b4.JPG" >
+<img border="0" alt="Geometry Dash" src="https://www.hrkgame.com/media/screens/322170/.thumbnails/ss_89fd9afb5dea806cb0c696bbb2b4e602cc21a713.600x338.jpg/ss_89fd9afb5dea806cb0c696bbb2b4e602cc21a713.600x338-800x500.jpg" >
 </a>
 
-![Product Presentation Image](https://i20.kanobu.ru/c/e1f46bb9c5636659baa1a169de426980/200x284/u.kanobu.ru/games/7b62f269-c816-4dae-8803-2ec59aa561b4.JPG)
+<hr />
 
 **[Geometry Dash](https://en.wikipedia.org/wiki/Geometry_Dash)** According to Topala, the game began as a project that could have moved in any direction. He made the remarks, "it simply started as a template with a cube that could crash and jump" and "there really was no detailed plan". He previously developed it for the computer, but later altered his plan and made attempts to make it a mobile game. Topala was inspired by "The Impossible Game" and he took about four months to create the game and take it to the App Store and Google Play Store. In the beta version, the game was called Geometry Jump, but was later changed to Geometry Dash.<br />
 
